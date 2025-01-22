@@ -1,4 +1,12 @@
 # Databricks notebook source
+### Ler a pasta do GitHub com os arquivos
+
+# Definição do usuário
+User = 'user-rsyscppecwxv@oreilly-cloudlabs.com'
+display(dbutils.fs.ls(f"file:/Workspace/Users/{User}/TreinamentoDatabricksTCS/landing"))
+
+# COMMAND ----------
+
 ### Importando bibliotecas para manipulação de dados
 from pyspark.sql.types import *
 
