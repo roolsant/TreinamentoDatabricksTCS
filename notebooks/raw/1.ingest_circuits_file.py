@@ -1,13 +1,13 @@
 # Databricks notebook source
-# MAGIC %run "../includes/configuration"
-
-# COMMAND ----------
-
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType, DoubleType
 
 # COMMAND ----------
 
+# MAGIC %run "../includes/configuration"
 
+# COMMAND ----------
+
+user_path
 
 # COMMAND ----------
 
@@ -27,7 +27,7 @@ circuits_schema = StructType(fields=[StructField("circuitId", IntegerType(), Fal
 circuits_df = spark.read \
 .option("header", True) \
 .schema(circuits_schema) \
-.csv(f"{user_path}/TreinamentoDatabricksTCS/landing/circuito.csv")
+.csv(f"{user_path}TreinamentoDatabricksTCS/landing/circuito.csv")
 
 # COMMAND ----------
 
