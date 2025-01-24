@@ -7,6 +7,10 @@ from pyspark.sql.types import StructType, StructField, IntegerType, StringType, 
 
 # COMMAND ----------
 
+
+
+# COMMAND ----------
+
 circuits_schema = StructType(fields=[StructField("circuitId", IntegerType(), False),
                                      StructField("circuitRef", StringType(), True),
                                      StructField("name", StringType(), True),
