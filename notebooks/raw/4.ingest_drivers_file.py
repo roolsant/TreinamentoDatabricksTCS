@@ -28,7 +28,7 @@ drivers_schema = StructType(fields=[StructField("driverId", IntegerType(), False
 
 drivers_df = spark.read \
 .schema(drivers_schema) \
-.json(f"{user_path}/TreinamentoDatabricks/landing/drivers.json")
+.json(f"{user_path}/TreinamentoDatabricksTCS/landing/drivers.json")
 
 # COMMAND ----------
 

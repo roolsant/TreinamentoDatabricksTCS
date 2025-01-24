@@ -30,7 +30,7 @@ results_schema = StructType(fields=[StructField("resultId", IntegerType(), False
 
 results_df = spark.read \
 .schema(results_schema) \
-.json(f"{user_path}/TreinamentoDatabricks/landing/results.json")
+.json(f"{user_path}/TreinamentoDatabricksTCS/landing/results.json")
 
 # COMMAND ----------
 

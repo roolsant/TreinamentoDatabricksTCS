@@ -9,7 +9,7 @@ constructors_schema = "constructorId INT, constructorRef STRING, name STRING, na
 
 constructor_df = spark.read \
     .schema(constructors_schema) \
-    .json(f"{user_path}/TreinamentoDatabricks/landing/constructors.json")
+    .json(f"{user_path}/TreinamentoDatabricksTCS/landing/constructors.json")
 
 # COMMAND ----------
 

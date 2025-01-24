@@ -22,7 +22,7 @@ races_schema = StructType(fields=[StructField("raceId", IntegerType(), False),
 races_df = spark.read \
 .option("header", True) \
 .schema(races_schema) \
-.csv(f"{user_path}/TreinamentoDatabricks/landing/races.csv")
+.csv(f"{user_path}/TreinamentoDatabricksTCS/landing/races.csv")
 
 # COMMAND ----------
 
